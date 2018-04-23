@@ -1,0 +1,68 @@
+header{
+    height: 50px;
+    border-bottom: 1px solid #efefef;
+    line-height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fefefe;
+    padding:0 15px;
+
+    .sidebar-toggle{
+        display: none;
+        cursor: pointer;
+        float: left;
+        margin-right: 10px;
+
+        &:before {
+            position: relative;
+            top: .4375rem;
+            font-family: sans-serif;
+            font-size: 2.5rem;
+            line-height: .125;
+            content: '\2261';
+        }
+    }
+
+    .brand{
+        float: left;
+        padding-right: 15px;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+        color: #555;
+        &:before{
+            content: " ";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+        img{
+            max-height: 30px;
+            vertical-align: middle;
+        }
+    }
+    nav{
+        float: left;
+
+        a,a:hover,a:focus,a:active{
+            color: #565656;
+        }
+
+        a{
+            padding:0.5em 0.75em;
+            margin:0.125em;
+
+            &:hover,&.active{
+                background: #eee;
+            }
+        }
+    }
+}
+@media(max-width:720px){
+    header{
+        .sidebar-toggle{
+            display: inline-block;
+        }
+    }
+}
